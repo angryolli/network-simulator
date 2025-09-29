@@ -1,16 +1,19 @@
-name: Mirror from GitLab
+name: Mirror to GitLab
 
 on:
   schedule:
-    - cron: '*/30 * * * *'   # every 30min
-  workflow_dispatch:         # possible to manual restart
+    - cron: '*/30 * * * *'   # every 30 minutes
+  workflow_dispatch:
+
+permissions:
+  contents: read  # we only need to read from GitHub
 
 jobs:
   mirror:
     runs-on: ubuntu-latest
     steps:
-      - name: Mirror repo
+      - name: Mirror GitHub → GitLab
         run: |
-          git clone --mirror https://version.aalto.fi/gitlab/bulgyno1/network-simulator.git repo.git
+          git clone --mirror https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/angryolli/network-simulator.git repo.git
           cd repo.git
-          git push --mirror https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com:angryolli/network-simulator.git
+          git push --mirror https://oauth2:${{ secrets.GITLAB_TOKEN }}@version.aalto.fi/gitlab/bulgyno1/network-simulator.git
