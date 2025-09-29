@@ -1,0 +1,16 @@
+name: Mirror from GitLab
+
+on:
+  schedule:
+    - cron: '*/30 * * * *'   # every 30min
+  workflow_dispatch:         # possible to manual restart
+
+jobs:
+  mirror:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Mirror repo
+        run: |
+          git clone --mirror https://version.aalto.fi/gitlab/bulgyno1/network-simulator.git repo.git
+          cd repo.git
+          git push --mirror https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com:angryolli/network-simulator.git
