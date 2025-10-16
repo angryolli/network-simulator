@@ -1,9 +1,9 @@
 name: Mirror to GitLab
 
-on:
-  schedule:
-    - cron: '*/30 * * * *'   # every 30 minutes
-  workflow_dispatch:
+# on:
+#   schedule:
+#     - cron: '*/30 * * * *'   # every 30 minutes
+#   workflow_dispatch:
 
 permissions:
   contents: read  # we only need to read from GitHub
