@@ -9,51 +9,34 @@ namespace netsim {
 // Forward declarations
 class Packet;
 
-/**
- * @brief Event queue for discrete-event simulation
- * 
- * Manages simulation time and scheduled events in chronological order.
- * Events are processed in time order to maintain simulation accuracy.
- */
+// Event queue for discrete-event simulation
+// Manages simulation time and scheduled events in chronological order.
+// Events are processed in time order to maintain simulation accuracy.
 class EventQueue {
 public:
-    /**
-     * @brief Event function type
-     */
+    // Event function type
     using EventFunction = std::function<void()>;
     
-    /**
-     * @brief Construct a new EventQueue object
-     */
+    // Construct a new EventQueue object
     EventQueue();
     
-    /**
-     * @brief Destroy the EventQueue object
-     */
+    // Destroy the EventQueue object
     ~EventQueue() = default;
     
-    /**
-     * @brief Get current simulation time
-     * @return double Current time in seconds
-     */
+    // Get current simulation time
+    // Returns: Current time in seconds
     double getCurrentTime() const;
     
-    /**
-     * @brief Schedule an event for future execution
-     * @param time Execution time
-     * @param event Event function to execute
-     */
+    // Schedule an event for future execution
+    // time: Execution time
+    // event: Event function to execute
     void scheduleEvent(double time, EventFunction event);
     
-    /**
-     * @brief Process next event in queue
-     * @return true if event was processed, false if queue is empty
-     */
+    // Process next event in queue
+    // Returns: true if event was processed, false if queue is empty
     bool processNextEvent();
     
-    // TODO: Implement event prioritization
-    // TODO: Add event cancellation support
-    // TODO: Implement simulation time management
+    // TODO: Implement event prioritization, cancellation support, and simulation time management
     
 private:
     struct Event {
@@ -65,8 +48,8 @@ private:
         }
     };
     
-    double currentTime_;                    ///< Current simulation time
-    std::priority_queue<Event, std::vector<Event>, std::greater<Event>> events_;  ///< Event queue
+    double currentTime_;                    // Current simulation time
+    std::priority_queue<Event, std::vector<Event>, std::greater<Event>> events_;  // Event queue
 };
 
 } // namespace netsim

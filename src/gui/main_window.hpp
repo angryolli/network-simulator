@@ -13,41 +13,28 @@
 namespace netsim {
 namespace gui {
 
-/**
- * @brief Main application window providing the GUI interface
- * 
- * Contains the network visualization area, control panels, and
- * simulation controls for the network simulator.
- */
+// Main application window providing the GUI interface
+// Contains the network visualization area, control panels, and
+// simulation controls for the network simulator.
 class MainWindow : public QMainWindow {
     Q_OBJECT
 
 public:
-    /**
-     * @brief Construct a new MainWindow object
-     * @param parent Parent widget
-     */
+    // Construct a new MainWindow object
+    // parent: Parent widget
     explicit MainWindow(QWidget* parent = nullptr);
     
-    /**
-     * @brief Destroy the MainWindow object
-     */
+    // Destroy the MainWindow object
     ~MainWindow() = default;
 
 private slots:
-    /**
-     * @brief Start simulation
-     */
+    // Start simulation
     void startSimulation();
     
-    /**
-     * @brief Stop simulation
-     */
+    // Stop simulation
     void stopSimulation();
     
-    /**
-     * @brief Reset simulation
-     */
+    // Reset simulation
     void resetSimulation();
 
 private:
@@ -56,9 +43,7 @@ private:
     void setupToolBar();
     void setupStatusBar();
     
-    // TODO: Implement network topology visualization
-    // TODO: Add real-time simulation controls
-    // TODO: Implement parameter configuration panels
+    // TODO: Implement network topology visualization, real-time simulation controls, and parameter configuration panels
     
     // UI Components
     QWidget* centralWidget_;
