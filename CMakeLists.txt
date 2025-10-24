@@ -28,13 +28,13 @@ set(CMAKE_AUTOUIC ON)
 set(CMAKE_AUTORCC ON)
 
 # Include directories
-include_directories(include)
+include_directories(src/include)
 
 # Header files for MOC processing
 set(GUI_HEADERS
-    include/gui/main_window.hpp
-    include/gui/node_item.hpp
-    include/gui/link_item.hpp
+    src/gui/main_window.hpp
+    src/gui/node_item.hpp
+    src/gui/link_item.hpp
 )
 
 # Source files
@@ -55,9 +55,9 @@ set(CORE_SOURCES
 )
 
 set(GUI_SOURCES
-    gui/main_window.cpp
-    gui/node_item.cpp
-    gui/link_item.cpp
+    src/gui/main_window.cpp
+    src/gui/node_item.cpp
+    src/gui/link_item.cpp
 )
 
 # Create executable

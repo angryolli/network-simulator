@@ -1,5 +1,5 @@
-#include "gui/link_item.hpp"
-#include "gui/node_item.hpp"
+#include "link_item.hpp"
+#include "node_item.hpp"
 #include <QPainter>
 #include <QStyleOptionGraphicsItem>
 

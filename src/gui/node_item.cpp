@@ -1,4 +1,4 @@
-#include "gui/node_item.hpp"
+#include "node_item.hpp"
 #include <QPainter>
 #include <QStyleOptionGraphicsItem>
 

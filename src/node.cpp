@@ -1,6 +1,6 @@
-#include "node.hpp"
-#include "interface.hpp"
-#include "traffic_generator.hpp"
+#include "include/node.hpp"
+#include "include/interface.hpp"
+#include "include/traffic_generator.hpp"
 
 namespace netsim {
 
