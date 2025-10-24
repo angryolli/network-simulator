@@ -3,17 +3,18 @@
 #include <string>
 #include <vector>
 #include <memory>
+#include "endhost.hpp"
+#include "router.hpp"
 
 namespace netsim {
 
 // Forward declarations
 class Interface;
-class TrafficGenerator;
 
 // Represents a network node that can act as end-host, router, or both
 // Each node has an address and can send/receive packets through interfaces.
 // Nodes can have multiple roles: EndHost, Router, or both.
-class Node {
+class Node : public EndHost, public Router {
 public:
     // Construct a new Node object
     // address: Node address identifier
@@ -35,7 +36,6 @@ public:
 private:
     std::string address_;                                    // Node address
     std::vector<std::shared_ptr<Interface>> interfaces_;   // Connected interfaces
-    std::shared_ptr<TrafficGenerator> trafficGenerator_;    // Traffic generation component
 };
 
 }

@@ -5,7 +5,7 @@
 namespace netsim {
 
 Node::Node(const std::string& address)
-    : address_(address)
+    : EndHost(address), Router(address), address_(address)
 {
     // TODO: Initialize routing table, traffic generator, and configure node roles
 }
