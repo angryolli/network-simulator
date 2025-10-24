@@ -49,9 +49,6 @@ set(CORE_SOURCES
     src/stats.cpp
     src/config_manager.cpp
     src/limited_queue.cpp
-    src/mobile_node.cpp
-    src/mobility.cpp
-    src/mobility_model.cpp
 )
 
 set(GUI_SOURCES
