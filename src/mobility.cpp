@@ -5,8 +5,7 @@ namespace netsim {
 Mobility::Mobility(const std::string& mobilityId)
     : mobilityId_(mobilityId)
 {
-    // TODO: Initialize movement parameters
-    // TODO: Set up movement model
+    // TODO: Initialize movement parameters and set up movement model
 }
 
 const std::string& Mobility::getMobilityId() const
@@ -16,9 +15,7 @@ const std::string& Mobility::getMobilityId() const
 
 QPointF Mobility::calculateNextPosition(const QPointF& currentPosition, double deltaTime)
 {
-    // TODO: Implement movement calculation
-    // TODO: Apply movement model
-    // TODO: Handle boundary conditions
+    // TODO: Implement movement calculation, apply movement model, and handle boundary conditions
     return currentPosition; // Placeholder
 }
 

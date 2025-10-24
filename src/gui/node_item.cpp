@@ -12,8 +12,7 @@ NodeItem::NodeItem(const QString& nodeId, qreal x, qreal y)
     setFlag(QGraphicsItem::ItemIsSelectable, true);
     setFlag(QGraphicsItem::ItemIsMovable, true);
     
-    // TODO: Initialize node appearance
-    // TODO: Set up interaction flags
+    // TODO: Initialize node appearance and set up interaction flags
 }
 
 QString NodeItem::getNodeId() const
@@ -23,8 +22,7 @@ QString NodeItem::getNodeId() const
 
 void NodeItem::setPosition(qreal x, qreal y)
 {
-    // TODO: Update position
-    // TODO: Notify connected links of position change
+    // TODO: Update position and notify connected links of position change
     setPos(x, y);
 }
 
@@ -39,9 +37,7 @@ void NodeItem::paint(QPainter* painter, const QStyleOptionGraphicsItem* option, 
     Q_UNUSED(option)
     Q_UNUSED(widget)
     
-    // TODO: Draw node representation
-    // TODO: Handle different node states (active, inactive, selected)
-    // TODO: Add node type indicators
+    // TODO: Draw node representation, handle different node states, and add node type indicators
     
     painter->setPen(QPen(Qt::black, 2));
     painter->setBrush(QBrush(QColor(173, 216, 230))); // Light blue

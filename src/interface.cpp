@@ -6,8 +6,7 @@ namespace netsim {
 Interface::Interface(const std::string& id)
     : id_(id)
 {
-    // TODO: Initialize interface state
-    // TODO: Set up queue management
+    // TODO: Initialize interface state and set up queue management
 }
 
 const std::string& Interface::getId() const
@@ -17,8 +16,7 @@ const std::string& Interface::getId() const
 
 void Interface::connectToLink(std::shared_ptr<Link> link)
 {
-    // TODO: Validate link connection
-    // TODO: Set up bidirectional communication
+    // TODO: Validate link connection and set up bidirectional communication
     connectedLink_ = link;
 }
 

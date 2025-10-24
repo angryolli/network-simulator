@@ -5,8 +5,7 @@ namespace netsim {
 EventQueue::EventQueue()
     : currentTime_(0.0)
 {
-    // TODO: Initialize event processing state
-    // TODO: Set up time management
+    // TODO: Initialize event processing state and set up time management
 }
 
 double EventQueue::getCurrentTime() const
@@ -16,17 +15,12 @@ double EventQueue::getCurrentTime() const
 
 void EventQueue::scheduleEvent(double time, EventFunction event)
 {
-    // TODO: Validate event time
-    // TODO: Add event to priority queue
-    // TODO: Maintain chronological order
+    // TODO: Validate event time, add to priority queue, and maintain chronological order
 }
 
 bool EventQueue::processNextEvent()
 {
-    // TODO: Check if events are available
-    // TODO: Process next event in chronological order
-    // TODO: Update simulation time
-    // TODO: Handle event execution
+    // TODO: Check if events are available, process next event, update simulation time, and handle execution
     return false; // Placeholder
 }
 

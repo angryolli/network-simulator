@@ -7,9 +7,7 @@ namespace netsim {
 Node::Node(const std::string& address)
     : address_(address)
 {
-    // TODO: Initialize routing table
-    // TODO: Set up traffic generator
-    // TODO: Configure node roles (EndHost/Router)
+    // TODO: Initialize routing table, traffic generator, and configure node roles
 }
 
 const std::string& Node::getAddress() const
@@ -19,9 +17,7 @@ const std::string& Node::getAddress() const
 
 void Node::addInterface(std::shared_ptr<Interface> interface)
 {
-    // TODO: Validate interface
-    // TODO: Add to interfaces list
-    // TODO: Configure interface for this node
+    // TODO: Validate interface, add to list, and configure for this node
 }
 
 } // namespace netsim

@@ -6,15 +6,12 @@ namespace netsim {
 LimitedQueue::LimitedQueue(size_t maxSize)
     : maxSize_(maxSize), droppedPackets_(0)
 {
-    // TODO: Initialize queue state
-    // TODO: Set up dropping policies
+    // TODO: Initialize queue state and set up dropping policies
 }
 
 bool LimitedQueue::enqueue(std::shared_ptr<Packet> packet)
 {
-    // TODO: Check queue capacity
-    // TODO: Add packet or drop based on policy
-    // TODO: Update statistics
+    // TODO: Check queue capacity, add packet or drop based on policy, and update statistics
     if (queue_.size() >= maxSize_) {
         droppedPackets_++;
         return false;
@@ -26,8 +23,7 @@ bool LimitedQueue::enqueue(std::shared_ptr<Packet> packet)
 
 std::shared_ptr<Packet> LimitedQueue::dequeue()
 {
-    // TODO: Remove and return next packet
-    // TODO: Handle empty queue
+    // TODO: Remove and return next packet and handle empty queue
     if (queue_.empty()) {
         return nullptr;
     }

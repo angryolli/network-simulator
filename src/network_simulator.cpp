@@ -10,39 +10,29 @@ namespace netsim {
 NetworkSimulator::NetworkSimulator()
     : running_(false)
 {
-    // TODO: Initialize simulation components
-    // TODO: Set up event queue
-    // TODO: Initialize statistics collection
+    // TODO: Initialize simulation components, event queue, and statistics collection
 }
 
 void NetworkSimulator::addNode(std::shared_ptr<Node> node)
 {
-    // TODO: Validate node
-    // TODO: Add to nodes collection
-    // TODO: Update network topology
+    // TODO: Validate node, add to collection, and update topology
 }
 
 void NetworkSimulator::addLink(std::shared_ptr<Link> link)
 {
-    // TODO: Validate link
-    // TODO: Add to links collection
-    // TODO: Update network topology
+    // TODO: Validate link, add to collection, and update topology
 }
 
 void NetworkSimulator::start()
 {
-    // TODO: Initialize simulation state
-    // TODO: Start event processing loop
-    // TODO: Begin statistics collection
+    // TODO: Initialize simulation state, start event processing, and begin statistics collection
     running_ = true;
 }
 
 void NetworkSimulator::stop()
 {
-    // TODO: Stop event processing
-    // TODO: Finalize statistics
-    // TODO: Clean up simulation state
+    // TODO: Stop event processing, finalize statistics, and clean up simulation state
     running_ = false;
 }
 
-} // namespace netsim
+}

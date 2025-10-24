@@ -9,23 +9,19 @@ namespace gui {
 LinkItem::LinkItem(NodeItem* sourceNode, NodeItem* destNode)
     : sourceNode_(sourceNode), destNode_(destNode), utilization_(0.0)
 {
-    // TODO: Initialize link appearance
-    // TODO: Set up connection to nodes
-    // TODO: Configure link properties
+    // TODO: Initialize link appearance, set up connection to nodes, and configure link properties
 }
 
 void LinkItem::setUtilization(double utilization)
 {
-    // TODO: Update utilization value
-    // TODO: Trigger visual update
+    // TODO: Update utilization value and trigger visual update
     utilization_ = qBound(0.0, utilization, 1.0);
     update();
 }
 
 QRectF LinkItem::boundingRect() const
 {
-    // TODO: Calculate bounding rectangle for link
-    // TODO: Include source and destination node positions
+    // TODO: Calculate bounding rectangle for link and include source and destination node positions
     if (!sourceNode_ || !destNode_) {
         return QRectF();
     }
@@ -50,9 +46,7 @@ void LinkItem::paint(QPainter* painter, const QStyleOptionGraphicsItem* option, 
         return;
     }
     
-    // TODO: Draw link representation
-    // TODO: Handle different link states (active, congested, failed)
-    // TODO: Add packet animation support
+    // TODO: Draw link representation, handle different link states, and add packet animation support
     
     QPointF sourcePos = sourceNode_->pos();
     QPointF destPos = destNode_->pos();

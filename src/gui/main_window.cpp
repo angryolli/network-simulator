@@ -75,8 +75,7 @@ void MainWindow::setupUI()
     connect(stopButton_, &QPushButton::clicked, this, &MainWindow::stopSimulation);
     connect(resetButton_, &QPushButton::clicked, this, &MainWindow::resetSimulation);
     
-    // TODO: Initialize network scene with placeholder nodes
-    // TODO: Set up real-time visualization updates
+    // TODO: Initialize network scene with placeholder nodes and set up real-time visualization updates
 }
 
 void MainWindow::setupMenuBar()
@@ -123,8 +122,7 @@ void MainWindow::setupToolBar()
 void MainWindow::setupStatusBar()
 {
     statusBar()->showMessage("Ready");
-    // TODO: Add simulation status indicators
-    // TODO: Add real-time statistics display
+    // TODO: Add simulation status indicators and real-time statistics display
 }
 
 void MainWindow::startSimulation()
@@ -133,9 +131,7 @@ void MainWindow::startSimulation()
     stopButton_->setEnabled(true);
     statusBar()->showMessage("Simulation running...");
     
-    // TODO: Initialize simulation engine
-    // TODO: Start event processing
-    // TODO: Begin real-time visualization updates
+    // TODO: Initialize simulation engine, start event processing, and begin real-time visualization updates
 }
 
 void MainWindow::stopSimulation()
@@ -144,9 +140,7 @@ void MainWindow::stopSimulation()
     stopButton_->setEnabled(false);
     statusBar()->showMessage("Simulation stopped");
     
-    // TODO: Stop simulation engine
-    // TODO: Pause event processing
-    // TODO: Stop visualization updates
+    // TODO: Stop simulation engine, pause event processing, and stop visualization updates
 }
 
 void MainWindow::resetSimulation()
@@ -155,9 +149,7 @@ void MainWindow::resetSimulation()
     stopButton_->setEnabled(false);
     statusBar()->showMessage("Simulation reset");
     
-    // TODO: Reset simulation state
-    // TODO: Clear network scene
-    // TODO: Reset statistics
+    // TODO: Reset simulation state, clear network scene, and reset statistics
 }
 
 } // namespace gui
