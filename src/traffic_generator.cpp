@@ -15,4 +15,4 @@ std::shared_ptr<Packet> TrafficGenerator::generatePacket()
     return nullptr; // Placeholder
 }
 
-} // namespace netsim
+}

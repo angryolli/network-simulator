@@ -35,4 +35,4 @@ private:
     std::vector<std::shared_ptr<MobileNode>> mobileNodes_;  // Mobile nodes in simulation
 };
 
-} // namespace netsim
+}

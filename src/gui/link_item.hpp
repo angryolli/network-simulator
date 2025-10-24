@@ -41,5 +41,5 @@ private:
     double utilization_;       // Current link utilization
 };
 
-} // namespace gui
-} // namespace netsim
+}
+}

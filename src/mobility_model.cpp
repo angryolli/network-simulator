@@ -22,4 +22,4 @@ void MobilityModel::updatePositions(double deltaTime)
     }
 }
 
-} // namespace netsim
+}

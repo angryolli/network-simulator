@@ -43,5 +43,5 @@ private:
     qreal radius_;      // Node radius for drawing
 };
 
-} // namespace gui
-} // namespace netsim
+}
+}

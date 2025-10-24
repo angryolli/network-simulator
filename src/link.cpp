@@ -19,4 +19,4 @@ double Link::getDelay() const
     return delay_;
 }
 
-} // namespace netsim
+}

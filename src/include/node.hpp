@@ -38,4 +38,4 @@ private:
     std::shared_ptr<TrafficGenerator> trafficGenerator_;    // Traffic generation component
 };
 
-} // namespace netsim
+}

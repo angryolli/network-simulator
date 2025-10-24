@@ -37,4 +37,4 @@ private:
     std::map<std::string, std::string> config_;  // Configuration parameters
 };
 
-} // namespace netsim
+}

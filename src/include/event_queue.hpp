@@ -52,4 +52,4 @@ private:
     std::priority_queue<Event, std::vector<Event>, std::greater<Event>> events_;  // Event queue
 };
 
-} // namespace netsim
+}

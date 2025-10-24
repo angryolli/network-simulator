@@ -38,4 +38,4 @@ private:
     std::queue<std::shared_ptr<Packet>> queue_;   // Packet transmission queue
 };
 
-} // namespace netsim
+}

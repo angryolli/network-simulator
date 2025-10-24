@@ -8,7 +8,7 @@ namespace netsim {
 
 // Forward declarations
 class Packet;
-class Interface;
+class Interface; // May be used later
 
 // Represents a network link connecting two interfaces
 // Links have bandwidth and propagation delay characteristics.
@@ -44,4 +44,4 @@ private:
     std::queue<std::shared_ptr<Packet>> queue_;  // Packet transmission queue
 };
 
-} // namespace netsim
+}

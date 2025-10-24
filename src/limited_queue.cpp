@@ -38,4 +38,4 @@ bool LimitedQueue::isFull() const
     return queue_.size() >= maxSize_;
 }
 
-} // namespace netsim
+}

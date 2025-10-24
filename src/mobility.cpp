@@ -19,4 +19,4 @@ QPointF Mobility::calculateNextPosition(const QPointF& currentPosition, double d
     return currentPosition; // Placeholder
 }
 
-} // namespace netsim
+}

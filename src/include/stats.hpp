@@ -39,4 +39,4 @@ private:
     size_t totalPackets_;                                  // Total packets processed
 };
 
-} // namespace netsim
+}

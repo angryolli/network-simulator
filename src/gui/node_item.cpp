@@ -49,5 +49,5 @@ void NodeItem::paint(QPainter* painter, const QStyleOptionGraphicsItem* option, 
                      Qt::AlignCenter, nodeId_);
 }
 
-} // namespace gui
-} // namespace netsim
+}
+}

@@ -20,4 +20,4 @@ void Interface::connectToLink(std::shared_ptr<Link> link)
     connectedLink_ = link;
 }
 
-} // namespace netsim
+}

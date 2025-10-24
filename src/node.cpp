@@ -20,4 +20,4 @@ void Node::addInterface(std::shared_ptr<Interface> interface)
     // TODO: Validate interface, add to list, and configure for this node
 }
 
-} // namespace netsim
+}

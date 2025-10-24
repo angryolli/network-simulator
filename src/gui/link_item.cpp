@@ -72,5 +72,5 @@ void LinkItem::paint(QPainter* painter, const QStyleOptionGraphicsItem* option, 
     }
 }
 
-} // namespace gui
-} // namespace netsim
+}
+}

@@ -47,4 +47,4 @@ private:
     std::unique_ptr<Mobility> mobility_;  // Mobility behavior
 };
 
-} // namespace netsim
+}

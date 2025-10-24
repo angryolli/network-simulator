@@ -30,4 +30,4 @@ private:
     std::string nodeId_;  // Associated node identifier
 };
 
-} // namespace netsim
+}

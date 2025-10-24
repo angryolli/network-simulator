@@ -24,4 +24,4 @@ bool EventQueue::processNextEvent()
     return false; // Placeholder
 }
 
-} // namespace netsim
+}

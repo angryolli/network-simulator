@@ -42,4 +42,4 @@ private:
     size_t droppedPackets_;                             // Number of dropped packets
 };
 
-} // namespace netsim
+}

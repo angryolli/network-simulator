@@ -27,4 +27,4 @@ private:
     size_t size_;         // Packet size in bytes
 };
 
-} // namespace netsim
+}

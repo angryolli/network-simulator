@@ -49,4 +49,4 @@ private:
     bool running_;                                   // Simulation running state
 };
 
-} // namespace netsim
+}

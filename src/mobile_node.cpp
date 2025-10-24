@@ -35,4 +35,4 @@ bool MobileNode::isInRange(const MobileNode& other) const
     return distance <= range_;
 }
 
-} // namespace netsim
+}

@@ -64,5 +64,5 @@ private:
     QSpinBox* packetRateSpinBox_;
 };
 
-} // namespace gui
-} // namespace netsim
+}
+}

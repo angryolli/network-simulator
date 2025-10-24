@@ -35,4 +35,4 @@ double Stats::getAverageDeliveryTime() const
     return sum / deliveryTimes_.size();
 }
 
-} // namespace netsim
+}

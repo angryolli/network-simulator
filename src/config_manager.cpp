@@ -26,4 +26,4 @@ void ConfigManager::setValue(const std::string& key, const std::string& value)
     config_[key] = value;
 }
 
-} // namespace netsim
+}

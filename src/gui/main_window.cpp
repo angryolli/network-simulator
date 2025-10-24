@@ -152,5 +152,5 @@ void MainWindow::resetSimulation()
     // TODO: Reset simulation state, clear network scene, and reset statistics
 }
 
-} // namespace gui
-} // namespace netsim
+}
+}
