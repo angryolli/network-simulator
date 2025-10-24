@@ -48,7 +48,6 @@ set(CORE_SOURCES
     src/traffic_generator.cpp
     src/stats.cpp
     src/config_manager.cpp
-    src/limited_queue.cpp
 )
 
 set(GUI_SOURCES
